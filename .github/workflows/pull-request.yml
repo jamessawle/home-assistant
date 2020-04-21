@@ -27,6 +27,7 @@ jobs:
         uses: "docker://pipelinecomponents/remark-lint:latest"
         continue-on-error: true
         with:
+          # yamllint disable-line rule:line-length
           args: "remark --no-stdout --color --frail --use preset-lint-recommended ."
   home_assistant_stable:
     runs-on: ubuntu-latest
@@ -44,4 +45,5 @@ jobs:
       - name: Home Assistant Check
         uses: "docker://homeassistant/home-assistant:stable"
         with:
+          # yamllint disable-line rule:line-length
           args: python -m homeassistant --config ./config/ --script check_config --info all
