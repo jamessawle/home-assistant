@@ -36,7 +36,7 @@ jobs:
       - name: Getting your configuration from GitHub
         uses: actions/checkout@v1
       - name: Copy stub files into configuration folder
-        run: cp -R ./.stubs/* ./config
+        run: cp -R ./.stubs/* .
       - name: Home Assistant Version
         uses: "docker://homeassistant/home-assistant:stable"
         with:
@@ -46,4 +46,4 @@ jobs:
         uses: "docker://homeassistant/home-assistant:stable"
         with:
           # yamllint disable-line rule:line-length
-          args: python -m homeassistant --config ./config/ --script check_config --info all
+          args: python -m homeassistant --config . --script check_config --info all
