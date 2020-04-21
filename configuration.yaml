@@ -8,4 +8,3 @@ default_config:
   automation: !include config/automations.yaml
   script: !include config/scripts.yaml
   scene: !include config/scenes.yaml
-    
