@@ -4,9 +4,4 @@
 # Basically, everything that doesn't have to be in the
 # main configuration.yaml.
 #
-homeassistant:
-  name: Humber Drive
-  unit_system: imperial
-  latitude: 51.55
-  longitude: 0.25
-  time_zone: Europe/London
+homeassistant: ~

@@ -2,4 +2,9 @@
 # All of the configuration is added via objects within
 # the integrations folder
 homeassistant:
+  name: Humber Drive
+  unit_system: imperial
+  latitude: 51.56997
+  longitude: 0.26398
+  time_zone: Europe/London
   packages: !include_dir_named integrations
