@@ -1,0 +1,6 @@
+---
+# This file allows for automations to be added by the UI into the
+# file within the root, and manually via the automations folder
+
+automation: !include ../automations.yaml
+automation split: !include_dir_list ../automations
