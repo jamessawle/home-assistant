@@ -3,6 +3,7 @@ name: Pull request
 
 # yamllint disable-line rule:truthy
 on:
+  push:
   pull_request:
   schedule:
     - cron: 0 12 * * *
