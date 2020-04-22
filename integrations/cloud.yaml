@@ -16,4 +16,4 @@ cloud:
       switch.guest_bedroom_lamp:
         name: Guest bedroom lamp
         description: Bedside lamp in guest bedroom
-        display_category: LIGHT
+        display_categories: LIGHT
