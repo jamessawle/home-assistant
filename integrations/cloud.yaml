@@ -4,4 +4,13 @@
 #
 # https://www.home-assistant.io/integrations/cloud/
 #
-cloud: ~
+cloud:
+  alexa:
+    filter:
+      include_entities:
+        - switch.guest_bedroom_lamp
+    entity_config:
+      switch.guest_bedroom_lamp:
+        name: Guest bedroom lamp
+        description: Bedside lamp in guest bedroom
+        display_category: LIGHT
