@@ -9,6 +9,9 @@ cloud:
     filter:
       include_entities:
         - switch.guest_bedroom_lamp
+      exclude_entities:
+        - binary_sensor.remote_ui
+        - binary_sensor.updater
     entity_config:
       switch.guest_bedroom_lamp:
         name: Guest bedroom lamp
